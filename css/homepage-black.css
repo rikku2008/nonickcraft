@@ -167,3 +167,14 @@ header {
     /* 色はとりあえずヘッダーといっしょ */
     background: #000000;
 }
+
+/* h1ちっせえなぁおい(h1大きくします) */
+h1 {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:300%;
+    vertical-align:baseline;
+    background:transparent;
+}
