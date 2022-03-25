@@ -1,18 +1,18 @@
 /* ｺｰﾎﾟﾚｰﾄﾛｺﾞとか言う名の神フォントの導入 */
 @font-face {
 	font-family: 'corpo-b';
-	src: url(font/Corporate-Bold.woff);
+	src: url(../font/Corporate-Bold.woff);
 }
 
 @font-face {
     font-family: 'corpo-m';
-	src: url(font/Corporate-Medium.woff);
+	src: url(../font/Corporate-Medium.woff);
 }
 
 /* 全般設定 */
 body {
-    background-color: #1D1D1D;
-    color: #ffffff;
+    background-color: #dde1ea;
+    color: #000000;
     overflow-x: hidden;
     overflow-y: hidden;
     padding-top: 60px; 
@@ -26,7 +26,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background: #000000;
+    background: #ffffff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }
 
@@ -66,6 +66,7 @@ header {
     float: left;
     height: 100vh;
     width: 250px;
-    background: #191919;
+    background: #E7EAF0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    margin: 10px;
 }
