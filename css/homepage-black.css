@@ -9,6 +9,11 @@
 	src: url(../font/Corporate-Medium.woff);
 }
 
+@font-face {
+    font-family: 'minecraft-b';
+    src: url(../font/Minecraft-Bold.woff);
+}
+
 /* 全般設定 */
 body {
     background-color: #222222;
@@ -34,7 +39,7 @@ header {
 .headertitle {
     font-size: 35px;
     padding: 10px 5px;
-    font-family: corpo-b;
+    font-family: minecraft-b;
 }
 
 /* のうにくのあたま */
