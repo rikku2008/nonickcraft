@@ -47,7 +47,7 @@ header {
 /* ヘッダーDiscordアイコン */
 .headerdiscord {
     width: 30px;
-    padding: 18px 10px;
+    padding: 0 10px;
 }
 
 /* ヘッダーDiscordテキスト(矛盾) */
@@ -58,7 +58,20 @@ header {
 /* ヘッダーに載る要素を揃える */
 .headerline {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+}
+
+/* 中の要素を横並びにする */
+.headerline div{
+    display: flex;
+}
+
+/* リンクを白に */
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding-top: 25px;
+    padding-left: 13px;
 }
 
 /* スライドショー */
