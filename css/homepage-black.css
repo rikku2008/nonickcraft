@@ -33,6 +33,7 @@ header {
     left: 0;
     background: #000000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    user-select: none;
 }
 
 /* サイトのタイトル */
@@ -90,7 +91,7 @@ header {
 .wrapper {
     display: flex;
     justify-content: space-between;
-    height: auto;
+    height: 1365px;
     margin: 30px auto;
     margin-left: 30px;
 }
@@ -105,7 +106,8 @@ header {
         "update update update" 400px
         "about1 about1 howJoin" 300px
         "video about2 about2" 315px
-        "unei unei unei" 200px / 1fr 1fr 1fr;
+        "unei unei unei" 200px
+        "links links links" 117px / 1fr 1fr 1fr;
 }
 
 /* 各ボックスのレイアウト */
@@ -141,3 +143,27 @@ header {
     box-shadow: 0 0 8px #000000;
 }
 
+/* footer上のlink集 */
+.links {
+    display: flex;
+    grid-area: links;
+}
+
+.links a {
+    min-width: 100px;
+    width: 100px;
+    height: 70px;
+    padding-top: 30px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: white;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* フッター */
+.footer {
+    height: 60px;
+    /* 色はとりあえずヘッダーといっしょ */
+    background: #000000;
+}
