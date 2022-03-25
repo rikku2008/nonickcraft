@@ -67,3 +67,31 @@ header {
     /* レイアウトが分かりやすいように色を変えています */
     background-color: pink;
 }
+
+/* mainとsideを横並び */
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 2000px;
+}
+
+/* メイン */
+/* 運営の英語わからん（） */
+.main {
+    width: 70%;
+    background-color: orange;
+    margin-left: 30px;
+    grid-template:
+        "update update update" 400px
+        "about1 about1 howJoin" 300px
+        "video about2 about2" 300px
+        "unei unei unei" 200px / 1fr 1fr 1fr
+    ;
+}
+
+/* サイド */
+.side {
+    width: 25%;
+    background-color: blue;
+}
+
