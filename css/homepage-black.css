@@ -13,8 +13,8 @@
 body {
     background-color: #1D1D1D;
     color: #ffffff;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
     padding-top: 60px;
     font-family: corpo-m;
 }
@@ -65,33 +65,60 @@ header {
 .slideshow {
     height: 600px;
     /* レイアウトが分かりやすいように色を変えています */
-    background-color: pink;
+    background-color: black;
 }
 
 /* mainとsideを横並び */
 .wrapper {
     display: flex;
     justify-content: space-between;
-    height: 2000px;
+    height: auto;
+    margin: 30px auto;
+    margin-left: 30px;
 }
 
 /* メイン */
 /* 運営の英語わからん（） */
 .main {
     width: 70%;
-    background-color: orange;
-    margin-left: 30px;
+    display: grid;
+    background-color: #222222;
     grid-template:
         "update update update" 400px
         "about1 about1 howJoin" 300px
-        "video about2 about2" 300px
-        "unei unei unei" 200px / 1fr 1fr 1fr
-    ;
+        "video about2 about2" 315px
+        "unei unei unei" 200px / 1fr 1fr 1fr;
+}
+
+/* 各ボックスのレイアウト */
+#update {
+    grid-area: update;
+    padding: 1px;
+}
+
+#about1{
+    grid-area: about1;
+}
+
+#about2{
+    grid-area: about2;
+}
+
+#howjoin{
+    grid-area: howJoin;
+}
+
+#video{
+    grid-area: video;
+}
+
+#unei{
+    grid-area: unei;
 }
 
 /* サイド */
 .side {
     width: 25%;
-    background-color: blue;
+    background-color: #1E1F20;
 }
 
