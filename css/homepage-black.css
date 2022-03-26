@@ -52,7 +52,7 @@ header {
 
 /* ヘッダーDiscordアイコン */
 .headerdiscord {
-    width: 30px;
+    width: auto;
     padding: 0 10px;
 }
 
@@ -68,7 +68,12 @@ header {
 }
 
 /* 中の要素を横並びにする */
-.headerline div{
+.headerline a{
+    display: flex;
+    padding-top: 4px;
+    text-decoration: none;
+}
+.nav {
     display: flex;
 }
 
@@ -85,6 +90,40 @@ header {
     height: 600px;
     /* レイアウトが分かりやすいように色を変えています */
     background-color: black;
+    margin: 0 auto;
+}
+
+.slideshow img{
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+#button_left{
+    position: absolute;
+    top: 290px;
+    left: 30px;
+    width: 60px;
+    height: 80px;
+    padding-top: 45px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #222222;
+}
+#button_right{
+    position: absolute;
+    top: 290px;
+    right: 30px;
+    width: 60px;
+    height: 80px;
+    padding-top: 45px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #222222;
+}
+
+#button_left:hover,#button_right:hover{
+    opacity: 0.8;
 }
 
 /* mainとsideを横並び */

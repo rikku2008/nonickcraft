@@ -13,16 +13,17 @@
   <header>
     <div>
       <div class="headerline">
-        <div>
+        <a href="homepage.html">
           <p><img src="img/head.png" class="headerhead"></p>
           <p class="headertitle"><span style="color:#7AEA73">NoNICK</span><span style="color:#5B5251">'s</span> <span style="color:#67F3EF"> SERVER</span></p>
-        </div>
+        </a>
         <div class="nav">
-          <a href="">サーバー参加方法</a>
-          <a href="">サーバールール</a>
+          <a href="help/join.html">サーバー参加方法</a>
+          <a href="help/rules.html">サーバールール</a>
           <a href="">サーバーで遊べるもの</a>
           <a href="index.html">公式wiki</a>
-          <a class="headerdiscordtext" href="https://discord.gg/kYTZnmebTp" title="Discrod SERVER" target="_blank" ><img src="img/discord-brands - white.png" class="headerdiscord"></a>
+          <a class="headerdiscordtext" href="https://discord.gg/kYTZnmebTp" title="Discrod SERVER" target="_blank" ><img src="img/discord-brands - white.png" class="headerdiscord" width="128px"
+            height="32px"></a>
         </div>
       </div>
     </div>
@@ -31,7 +32,9 @@
   <!-- 愉快な要素たち -->
   <body>
     <div class="slideshow">
-        スライドショー
+      <div id="button_left">&lt;</div>
+      <img src="img/slider1.png" alt="スライドショー" id="slide">
+      <div id="button_right">&gt;</div>
     </div>
     <div class="wrapper">
       <div class="main">
@@ -70,5 +73,8 @@
     <div class="footer">
       footer
     </div>
+
+    <!-- js読み込み -->
+    <script src="js/slideshow.js"></script>
   </body>
 </html>
